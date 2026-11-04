@@ -105,20 +105,6 @@ Record allowed and blocked requests in PostgreSQL, including relevant policy dec
 
 *The stack reflects the intended implementation and may evolve during development.*
 
-## Development Roadmap
-
-- [ ] Define the gateway architecture and policy configuration format.
-- [ ] Implement request interception and tool-call authorization.
-- [ ] Add default-deny allowlists and argument validation.
-- [ ] Implement security checks for suspicious tool arguments.
-- [ ] Add prompt-injection detection for tool outputs.
-- [ ] Implement secret-pattern detection and rate limiting.
-- [ ] Integrate PostgreSQL audit logging.
-- [ ] Build the React security monitoring dashboard.
-- [ ] Add unit and integration tests for allowed and blocked requests.
-- [ ] Test against representative malicious and benign tool-call scenarios.
-- [ ] Document limitations, evaluation results, and deployment instructions.
-
 ## Security and Evaluation Goals
 
 The project aims to evaluate:
@@ -142,10 +128,3 @@ GateZero is intended to provide an additional enforcement layer, not a complete 
 - Security decisions depend on correctly configured policies and trusted gateway deployment.
 - The gateway itself must be protected against unauthorized configuration changes and direct access to downstream tools.
 
-## Contributing
-
-This project is currently in development. Contributions, design feedback, and suggestions for security testing are welcome as the implementation progresses.
-
-## License
-
-A license has not yet been selected. Licensing terms will be added when the project license is established.
